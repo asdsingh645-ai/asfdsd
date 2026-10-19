@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | GrewalTraders</title>
+<meta name="description" content="Learn about GrewalTraders, a trading education and market analysis website based in Narnaul, Haryana.">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1120;color:#f1f5f9;font-family:Arial,sans-serif;line-height:1.7}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;border-bottom:1px solid #28354b}
+.logo{font-size:25px;font-weight:bold;color:#38d9a9;text-decoration:none}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a,footer a{color:#cbd5e1;text-decoration:none}
+a:hover{color:#38d9a9}
+.hero{text-align:center;padding:60px 6% 45px;background:linear-gradient(135deg,#111c31,#0b1120)}
+.green{color:#38d9a9}
+.muted{color:#aab7ca}
+.wrap{max-width:1050px;margin:auto;padding:25px 20px 60px}
+.card{background:#131d30;border:1px solid #28354b;border-radius:14px;padding:25px}
+.carousel{overflow:hidden;margin:10px 0 35px}
+.slide{display:none;text-align:center}
+.slide.active{display:block;animation:fade .5s}
+@keyframes fade{from{opacity:.35}to{opacity:1}}
+.visual{width:100%;max-width:650px;display:block;margin:auto;background:#0b1120;border-radius:10px}
+.controls{display:flex;justify-content:center;align-items:center;gap:18px;padding-top:15px}
+button{background:#38d9a9;color:#07111c;border:0;border-radius:7px;padding:10px 16px;font-weight:bold;cursor:pointer}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.dot{width:11px;height:11px;padding:0;border-radius:50%;background:#526176}
+.dot.active{background:#38d9a9}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:25px 0}
+.grid h3{margin-top:0}
+.grid p{color:#b6c3d6}
+.button{display:inline-block;background:#38d9a9;color:#07111c;padding:12px 19px;border-radius:7px;text-decoration:none;font-weight:bold}
+footer{border-top:1px solid #28354b;text-align:center;padding:25px;color:#aab7ca}
+@media(max-width:600px){header{padding:18px 5%}.wrap{padding:20px 5%}}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="logo" href="index.html">GrewalTraders.</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="analysis.html">Market Analysis</a>
+    <a href="guides.html">Trading Guides</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="green">GET TO KNOW US</p>
+  <h1>About <span class="green">GrewalTraders</span></h1>
+  <p class="muted">Trading Education &amp; Market Analysis</p>
+</section>
+
+<main class="wrap">
+  <section class="card">
+    <h2>Who We Are</h2>
+    <p>
+      GrewalTraders is a trading education and market information
+      website based in Narnaul, Haryana, India.
+    </p>
+    <p>
+      Our aim is to present educational information about financial
+      markets, chart analysis, trading concepts and risk management
+      in a clear and accessible format.
+    </p>
+    <p class="muted">
+      This introduction describes the website's intended focus.
+      Add your verified business history, experience and services
+      here if you would like to share them publicly.
+    </p>
+  </section>
+
+  <h2 style="margin-top:38px">Our Focus</h2>
+
+  <div class="carousel card" aria-label="About GrewalTraders slideshow">
+
+    <section class="slide active">
+      <h3 class="green">Trading Education</h3>
+      <p class="muted">Learn concepts, terminology and chart-reading techniques.</p>
+      <svg class="visual" viewBox="0 0 650 240" role="img" aria-label="Education illustration with books and chart">
+        <rect x="0" y="0" width="650" height="240" rx="10" fill="#0b1120"/>
+        <g stroke="#26364b">
+          <path d="M30 50H620 M30 100H620 M30 150H620 M30 200H620"/>
+        </g>
+        <path d="M60 180 L145 145 L225 160 L315 90 L405 120 L500 55 L590 75" fill="none" stroke="#38d9a9" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="75" y="190" width="120" height="25" rx="4" fill="#243951"/>
+        <rect x="85" y="180" width="120" height="25" rx="4" fill="#38d9a9"/>
+        <rect x="95" y="170" width="120" height="25" rx="4" fill="#167b69"/>
+        <circle cx="550" cy="165" r="24" fill="#243951" stroke="#38d9a9" stroke-width="3"/>
+        <path d="M540 165L548 173L563 154" fill="none" stroke="#38d9a9" stroke-width="4"/>
+      </svg>
+    </section>
+
+    <section class="slide">
+      <h3 class="green">Market Analysis</h3>
+      <p class="muted">Study price trends, support, resistance and market structure.</p>
+      <svg class="visual" viewBox="0 0 650 240" role="img" aria-label="Market analysis candlestick illustration">
+        <rect width="650" height="240" rx="10" fill="#0b1120"/>
+        <g stroke="#26364b">
+          <path d="M25 45H625 M25 90H625 M25 135H625 M25 180H625 M25 215H625"/>
+        </g>
+        <path d="M60 55V125 M115 85V155 M170 45V105 M225 90V175 M280 70V140 M335 35V100 M390 75V155 M445 40V105 M500 60V145 M555 30V90 M600 55V115" stroke="#38d9a9" stroke-width="3"/>
+        <g fill="#38d9a9">
+          <rect x="50" y="75" width="20" height="30"/>
+          <rect x="160" y="60" width="20" height="25"/>
+          <rect x="325" y="55" width="20" height="30"/>
+          <rect x="435" y="60" width="20" height="25"/>
+          <rect x="590" y="65" width="20" height="20"/>
+        </g>
+        <g fill="#ff647c">
+          <rect x="105" y="105" width="20" height="30"/>
+          <rect x="215" y="115" width="20" height="35"/>
+          <rect x="270" y="95" width="20" height="30"/>
+          <rect x="380" y="95" width="20" height="35"/>
+          <rect x="490" y="85" width="20" height="35"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="slide">
+      <h3 class="green">Risk Awareness</h3>
+      <p class="muted">Understand uncertainty, position sizing and responsible decision-making.</p>
+      <svg class="visual" viewBox="0 0 650 240" role="img" aria-label="Risk management shield illustration">
+        <rect width="650" height="240" rx="10" fill="#0b1120"/>
+        <path d="M325 28 L410 60 L400 130 Q380 180 325 207 Q270 180 250 130 L240 60 Z" fill="#172c3d" stroke="#38d9a9" stroke-width="4"/>
+        <path d="M285 116 L313 143 L365 87" fill="none" stroke="#38d9a9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M65 70H180 M65 100H160 M65 130H185 M470 70H585 M490 100H585 M465 130H585" stroke="#34455d" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="115" cy="175" r="22" fill="#243951" stroke="#60a5fa" stroke-width="3"/>
+        <path d="M105 175H125 M115 165V185" stroke="#60a5fa" stroke-width="3"/>
+        <circle cx="535" cy="175" r="22" fill="#243951" stroke="#60a5fa" stroke-width="3"/>
+        <path d="M525 175H545 M535 165V185" stroke="#60a5fa" stroke-width="3"/>
+      </svg>
+    </section>
+
+    <div class="controls">
+      <button id="prev" type="button">← Previous</button>
+      <span id="count" aria-live="polite">1 / 3</span>
+      <button id="next" type="button">Next →</button>
+    </div>
+    <div class="dots">
+      <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+    <p class="muted" style="text-align:center;font-size:12px">Illustrations are examples, not live market data. Slides change every 5 seconds.</p>
+  </div>
+
+  <h2>Our Principles</h2>
+  <div class="grid">
+    <section class="card">
+      <h3>Clarity</h3>
+      <p>Present educational topics in a simple and understandable way.</p>
+    </section>
+    <section class="card">
+      <h3>Risk Awareness</h3>
+      <p>Recognize that trading can result in financial losses.</p>
+    </section>
+    <section class="card">
+      <h3>Continuous Learning</h3>
+      <p>Encourage research, practice and independent verification.</p>
+    </section>
+  </div>
+
+  <section class="card" style="text-align:center">
+    <h2>Want to Get in Touch?</h2>
+    <p class="muted">Contact GrewalTraders for general business enquiries.</p>
+    <a class="button" href="contact.html">Contact Us</a>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> GrewalTraders. All rights reserved.</p>
+  <a href="index.html">Home</a> ·
+  <a href="guides.html">Trading Guides</a> ·
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const slides = Array.from(document.querySelectorAll(".slide"));
+  const dots = Array.from(document.querySelectorAll(".dot"));
+  const count = document.getElementById("count");
+  let current = 0;
+  let timer;
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+    count.textContent = (current + 1) + " / " + slides.length;
+  }
+
+  function restartTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => showSlide(current + 1), 5000);
+  }
+
+  document.getElementById("prev").addEventListener("click", () => {
+    showSlide(current - 1);
+    restartTimer();
+  });
+
+  document.getElementById("next").addEventListener("click", () => {
+    showSlide(current + 1);
+    restartTimer();
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      showSlide(Number(dot.dataset.slide));
+      restartTimer();
+    });
+  });
+
+  showSlide(0);
+  restartTimer();
+</script>
+</body>
+</html>

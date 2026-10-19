@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Guides | GrewalTraders</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1120;color:#f1f5f9;font-family:Arial,sans-serif;line-height:1.7}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;border-bottom:1px solid #28354b}
+.logo{font-size:25px;font-weight:bold;color:#38d9a9;text-decoration:none}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a,footer a{color:#cbd5e1;text-decoration:none}
+a:hover{color:#38d9a9}
+.hero{text-align:center;padding:50px 6% 25px}
+.hero h1{font-size:clamp(32px,5vw,48px);margin:10px 0}
+.green{color:#38d9a9}
+.muted{color:#aab7ca}
+.wrap{max-width:1100px;margin:auto;padding:20px}
+.carousel{position:relative;overflow:hidden;background:#131d30;border:1px solid #28354b;border-radius:16px}
+.slide{display:none;padding:25px}
+.slide.active{display:block;animation:fade .5s}
+@keyframes fade{from{opacity:.4}to{opacity:1}}
+.chart{width:100%;height:auto;display:block;background:#0b1120;border-radius:10px}
+.controls{display:flex;align-items:center;justify-content:center;gap:18px;padding:15px}
+button{background:#38d9a9;color:#07111c;border:0;padding:10px 17px;border-radius:7px;font-weight:bold;cursor:pointer}
+button:hover{background:#67e8c2}
+.dots{display:flex;justify-content:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;padding:0;background:#526176}
+.dot.active{background:#38d9a9}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:35px 0}
+.card{background:#131d30;border:1px solid #28354b;border-radius:12px;padding:22px}
+.card h3{margin-top:0}
+.card p{color:#b6c3d6}
+.card a{color:#38d9a9;text-decoration:none}
+.notice{font-size:13px;color:#aab7ca}
+footer{margin-top:35px;text-align:center;padding:25px;border-top:1px solid #28354b;color:#aab7ca}
+@media(max-width:600px){header{padding:18px 5%}.slide{padding:14px}.wrap{padding:12px}}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="logo" href="index.html">GrewalTraders.</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="analysis.html">Market Analysis</a>
+    <a href="guides.html">Trading Guides</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="green">LEARN • PRACTICE • IMPROVE</p>
+  <h1>Trading <span class="green">Guides</span></h1>
+  <p class="muted">Build your understanding of charts, technical analysis and risk management.</p>
+</section>
+
+<main class="wrap">
+  <h2>Explore Trading Charts</h2>
+  <p class="muted">Illustrative charts for educational purposes. Slides change every 5 seconds.</p>
+
+  <div class="carousel" aria-label="Trading chart slideshow">
+
+    <section class="slide active">
+      <h3>01 — Candlestick Patterns</h3>
+      <p class="muted">Learn how candle bodies and wicks represent price movement.</p>
+      <svg class="chart" viewBox="0 0 700 300" role="img" aria-label="Illustrative candlestick chart">
+        <g stroke="#25354a" stroke-width="1">
+          <path d="M30 50H670 M30 100H670 M30 150H670 M30 200H670 M30 250H670"/>
+          <path d="M100 25V275 M200 25V275 M300 25V275 M400 25V275 M500 25V275 M600 25V275"/>
+        </g>
+        <g stroke-width="3">
+          <path d="M80 100V180 M130 75V140 M180 115V205 M230 95V165 M280 65V145 M330 90V190 M380 55V120 M430 75V155 M480 35V105 M530 65V150 M580 45V125 M630 30V100" stroke="#38d9a9"/>
+        </g>
+        <g>
+          <rect x="70" y="120" width="20" height="35" fill="#38d9a9"/>
+          <rect x="120" y="95" width="20" height="25" fill="#38d9a9"/>
+          <rect x="170" y="140" width="20" height="40" fill="#ff647c"/>
+          <rect x="220" y="115" width="20" height="30" fill="#38d9a9"/>
+          <rect x="270" y="85" width="20" height="35" fill="#38d9a9"/>
+          <rect x="320" y="110" width="20" height="45" fill="#ff647c"/>
+          <rect x="370" y="75" width="20" height="30" fill="#38d9a9"/>
+          <rect x="420" y="95" width="20" height="30" fill="#ff647c"/>
+          <rect x="470" y="55" width="20" height="35" fill="#38d9a9"/>
+          <rect x="520" y="85" width="20" height="40" fill="#ff647c"/>
+          <rect x="570" y="65" width="20" height="35" fill="#38d9a9"/>
+          <rect x="620" y="50" width="20" height="30" fill="#38d9a9"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="slide">
+      <h3>02 — Trend Analysis</h3>
+      <p class="muted">Understand how traders identify possible trends and price structure.</p>
+      <svg class="chart" viewBox="0 0 700 300" role="img" aria-label="Illustrative upward trend chart">
+        <g stroke="#25354a">
+          <path d="M30 50H670 M30 100H670 M30 150H670 M30 200H670 M30 250H670"/>
+        </g>
+        <path d="M40 240 L100 200 L145 220 L210 155 L260 185 L330 125 L390 150 L450 90 L500 115 L570 55 L660 75"
+          fill="none" stroke="#38d9a9" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M40 240 L100 200 L145 220 L210 155 L260 185 L330 125 L390 150 L450 90 L500 115 L570 55 L660 75 L660 270 L40 270 Z"
+          fill="#38d9a9" opacity=".08"/>
+        <path d="M40 260 L660 110" stroke="#fbbf24" stroke-width="2" stroke-dasharray="7 6"/>
+      </svg>
+    </section>
+
+    <section class="slide">
+      <h3>03 — Support & Resistance</h3>
+      <p class="muted">Learn how traders study potential price zones rather than guaranteed turning points.</p>
+      <svg class="chart" viewBox="0 0 700 300" role="img" aria-label="Illustrative support and resistance chart">
+        <rect x="30" y="55" width="640" height="35" fill="#ff647c" opacity=".14"/>
+        <rect x="30" y="210" width="640" height="35" fill="#38d9a9" opacity=".14"/>
+        <path d="M30 55H670 M30 90H670" stroke="#ff647c" stroke-width="2" stroke-dasharray="7 5"/>
+        <path d="M30 210H670 M30 245H670" stroke="#38d9a9" stroke-width="2" stroke-dasharray="7 5"/>
+        <path d="M40 180 L100 125 L160 75 L220 130 L280 185 L340 220 L400 165 L460 110 L520 75 L580 145 L650 215"
+          fill="none" stroke="#60a5fa" stroke-width="4" stroke-linejoin="round"/>
+        <text x="45" y="45" fill="#ff647c" font-size="14">Resistance zone</text>
+        <text x="45" y="270" fill="#38d9a9" font-size="14">Support zone</text>
+      </svg>
+    </section>
+
+    <div class="controls">
+      <button type="button" id="prev">← Previous</button>
+      <span id="count" aria-live="polite">1 / 3</span>
+      <button type="button" id="next">Next →</button>
+    </div>
+    <div class="dots" aria-label="Choose slide">
+      <button class="dot active" aria-label="Slide 1" data-slide="0"></button>
+      <button class="dot" aria-label="Slide 2" data-slide="1"></button>
+      <button class="dot" aria-label="Slide 3" data-slide="2"></button>
+    </div>
+    <p class="notice" style="text-align:center">Auto-changing every 5 seconds · Use the buttons to navigate manually.</p>
+  </div>
+
+  <h2>Trading Education Library</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Stock Market Basics</h3>
+      <p>Understand shares, indices, orders, liquidity and volatility.</p>
+      <a href="analysis.html">Explore market analysis →</a>
+    </article>
+    <article class="card">
+      <h3>Technical Analysis</h3>
+      <p>Study trendlines, chart patterns, indicators and price action.</p>
+      <a href="analysis.html">Read analysis →</a>
+    </article>
+    <article class="card">
+      <h3>Options Education</h3>
+      <p>Learn about calls, puts, premiums, expiry and options risks.</p>
+      <a href="https://www.nseindia.com/" target="_blank" rel="noopener">NSE official website →</a>
+    </article>
+    <article class="card">
+      <h3>Risk Management</h3>
+      <p>Study position sizing, stop losses and risk-reward planning.</p>
+      <a href="contact.html">Contact us →</a>
+    </article>
+  </div>
+
+  <p class="notice">Educational material only. Charts are simulated examples, not live prices or trading recommendations.</p>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> GrewalTraders. All rights reserved.</p>
+  <a href="index.html">Home</a> ·
+  <a href="about.html">About Us</a> ·
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const slides = Array.from(document.querySelectorAll(".slide"));
+  const dots = Array.from(document.querySelectorAll(".dot"));
+  const count = document.getElementById("count");
+  let current = 0;
+  let timer;
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+    count.textContent = (current + 1) + " / " + slides.length;
+  }
+
+  function restartTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => showSlide(current + 1), 5000);
+  }
+
+  document.getElementById("prev").addEventListener("click", () => {
+    showSlide(current - 1);
+    restartTimer();
+  });
+
+  document.getElementById("next").addEventListener("click", () => {
+    showSlide(current + 1);
+    restartTimer();
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      showSlide(Number(dot.dataset.slide));
+      restartTimer();
+    });
+  });
+
+  showSlide(0);
+  restartTimer();
+</script>
+</body>
+</html>

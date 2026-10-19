@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact GrewalTraders | Trading Education</title>
+
+  <meta name="description"
+        content="Contact GrewalTraders for trading education, market analysis and general business enquiries in Narnaul, Haryana.">
+
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #131d30;
+      --border: #28354b;
+      --text: #f1f5f9;
+      --muted: #aab7ca;
+      --accent: #38d9a9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 65px 20px 45px;
+      background: linear-gradient(135deg, #111c31, var(--bg));
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 48px);
+      margin: 12px 0;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 35px 20px 65px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 25px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card {
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card h2 {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .detail {
+      color: var(--muted);
+      min-height: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      background: var(--accent);
+      color: #07111c;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: #67e8c2;
+    }
+
+    .secondary-button {
+      background: transparent;
+      border: 1px solid #526178;
+      color: var(--text);
+    }
+
+    .secondary-button:hover {
+      background: #202c40;
+      color: white;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .info h2,
+    .form-card h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      color: var(--muted);
+    }
+
+    .info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 8px;
+      border: 1px solid #36445b;
+      border-radius: 7px;
+      background: #0b1120;
+      color: white;
+      font: inherit;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .privacy-note {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .about {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .about p {
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 7%;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      max-width: 750px;
+      margin: 15px auto;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .container {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="index.html">GrewalTraders.</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="analysis.html">Market Analysis</a>
+      <a href="guides.html">Trading Guides</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Let's Connect</div>
+
+    <h1>Contact <span>GrewalTraders</span></h1>
+
+    <p>
+      Trading Education &amp; Market Analysis.
+      Have a general enquiry or question about our content?
+      Get in touch with us.
+    </p>
+  </section>
+
+  <main class="container">
+
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p>Choose your preferred way to contact us.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="card contact-card">
+        <div class="icon">📞</div>
+        <h2>Call Us</h2>
+        <p class="detail">9729720806</p>
+
+        <a class="button" href="tel:+919729720806">
+          Call Now
+        </a>
+      </div>
+
+      <div class="card contact-card">
+        <div class="icon">💬</div>
+        <h2>WhatsApp</h2>
+        <p class="detail">Chat with GrewalTraders</p>
+
+        <a class="button"
+           href="https://wa.me/919729720806"
+           target="_blank"
+           rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="card contact-card">
+        <div class="icon">✉️</div>
+        <h2>Email Us</h2>
+        <p class="detail">GrewalTraders@gmail.com</p>
+
+        <a class="button"
+           href="mailto:GrewalTraders@gmail.com?subject=Business%20Enquiry">
+          Send Email
+        </a>
+      </div>
+
+      <div class="card contact-card">
+        <div class="icon">📍</div>
+        <h2>Our Location</h2>
+        <p class="detail">Narnaul, Haryana, India</p>
+        <a class="button secondary-button"
+           href="https://www.google.com/maps/search/?api=1&query=Narnaul%2C%20Haryana"
+           target="_blank"
+           rel="noopener noreferrer">
+          View on Map
+        </a>
+      </div>
+
+    </div>
+
+    <div class="contact-layout">
+
+      <section class="card info">
+        <h2>GrewalTraders</h2>
+
+        <p>
+          <strong>Trading Education &amp; Market Analysis</strong>
+        </p>
+
+        <p>
+          Our website is intended to share trading education,
+          market-related information and useful resources.
+        </p>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:+919729720806">9729720806</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:GrewalTraders@gmail.com">
+            GrewalTraders@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Location:</strong><br>
+          Narnaul, Haryana, India
+        </p>
+
+        <p>
+          <strong>Social presence:</strong><br>
+          Grewal Traders
+        </p>
+
+        <!-- Add verified social profile URLs here
+             when they are available. -->
+      </section>
+
+      <section class="card form-card">
+        <h2>Send Us a Message</h2>
+
+        <p class="detail">
+          Fill in the form below for a general enquiry.
+        </p>
+
+        <!-- FormSubmit setup:
+             Replace the action email with your verified email
+             if it changes. Activate the email confirmation
+             sent by FormSubmit before using this form. -->
+
+        <form
+          action="https://formsubmit.co/GrewalTraders@gmail.com"
+          method="POST">
+
+          <input type="hidden"
+                 name="_subject"
+                 value="New enquiry - GrewalTraders Website">
+
+          <input type="hidden"
+                 name="_template"
+                 value="table">
+
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            maxlength="100"
+            required>
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            maxlength="254"
+            required>
+
+          <label for="phone">Phone Number (Optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            autocomplete="tel"
+            maxlength="30">
+
+          <label for="topic">Enquiry Type</label>
+          <select id="topic" name="enquiry_type" required>
+            <option value="">Select an option</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Website Content">Website Content</option>
+            <option value="Business Enquiry">Business Enquiry</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            maxlength="5000"
+            required></textarea>
+
+          <button class="button" type="submit">
+            Send Message
+          </button>
+
+          <p class="privacy-note">
+            Please do not submit passwords, account details,
+            trading credentials or other sensitive information.
+          </p>
+
+        </form>
+      </section>
+
+    </div>
+
+    <section class="card about">
+      <h2>Important Information</h2>
+      <p>
+        Content on this website is for educational and
+        informational purposes only. It is not, by itself,
+        a recommendation to buy or sell securities.
+        Trading and investing involve financial risk.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> GrewalTraders.
+      All rights reserved.
+    </p>
+
+    <p>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </p>
+
+    <p class="disclaimer">
+      Trading involves risk. Verify information independently.
+      No returns are guaranteed.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
